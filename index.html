@@ -4,7 +4,7 @@ description: Browse through our rich collection of samples for AEM Forms
 ---
 {% for post in site.posts %}
 <li>
-    <a class="card-container" href="/samples/{{post.title | downcase | replace: ' ', '_'}}/">
+    <a class="card-container" href="/samples/{{post.title | downcase | replace: ' ', '-'}}.html">
         <div class="img-container">
             <img src="{{site.baseurl}}{{post.screenshot}}" />
         </div>
