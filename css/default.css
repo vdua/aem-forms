@@ -1,0 +1,40 @@
+html {
+    height:100%;
+}
+
+body {
+    background-image: radial-gradient(circle farthest-side, #FFFFFF, #FEFEFE 60%, #EDEDED);
+    color:#000;
+    min-height:100%;
+    height:100%;
+    font-family: source-sans-pro, sans-serif;
+}
+
+.header {
+    background:white;
+    z-index:10;
+}
+
+a:hover {
+    text-decoration:none;
+}
+
+.nav>li>a,
+.nav>li>a:hover,
+.nav>li>a:focus {
+    background: none;
+}
+
+a:hover,
+a:focus {
+    background: none;
+    color:black;
+}
+
+.page-header {
+    margin-bottom:0px;
+}
+
+.page-header h1 {
+    margin:0px;
+}

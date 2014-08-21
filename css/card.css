@@ -1,0 +1,68 @@
+ul.cards {
+    margin:0px;
+    padding:0px;
+    list-style: none;
+    list-style-type: none;
+    width:100%;
+}
+
+ul.cards > li {
+    width:25%;
+    padding:10px;
+    margin:0px;
+    float:left;
+    display:block;
+    min-height:200px;
+    height:200px;
+    cursor:pointer;
+}
+
+ul.cards > li > .card-container {
+    background-color: #FFF;
+    border:solid 2px;
+    border-color:#CCC;
+    padding:1px;
+    box-shadow:5px 5px 4px 0px #CCC;
+    transition:border-color 0.5s ease-in;
+    display:block;
+}
+
+ul.cards > li > .card-container:hover {
+    border-color:#000;
+}
+
+ul.cards > li > .card-container > .img-container {
+    width:100%;
+    background-color: #FFFFFF;
+    position:relative;
+    height: 160px;
+}
+
+ul.cards > li > .card-container > .img-container > img {
+    max-height:100%; 
+    width:100%;
+    padding:1px;
+    border:1px solid #CCCCCC;
+    margin:auto;
+    position:absolute;
+    top:0px;
+    bottom:0px;
+    left: 0px;
+    right: 0px;
+}
+
+ul.cards > li > .card-container > .card-details {
+    color:#333;
+    /* text-align:center; */
+    background: white;
+    padding:3px;
+}
+
+ul.cards > li > .card-container > .card-details > .post-title {
+    font-variant:small-caps;
+    letter-spacing: 1px;
+}
+
+ul.cards > li > .card-container > .card-details > .post-date {
+    color:#888;
+}

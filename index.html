@@ -1,0 +1,17 @@
+---
+layout: card
+description: Browse through our rich collection of samples for AEM Forms
+---
+{% for post in site.posts %}
+<li>
+    <a class="card-container" href="/samples/{{post.title | downcase | replace: ' ', '_'}}/">
+        <div class="img-container">
+            <img src="{{site.baseurl}}{{post.screenshot}}" />
+        </div>
+        <div class="card-details clearfix">
+            <div class="post-title pull-left">{{post.title}}</div>
+            <div class="post-date pull-right">{{post.date | date: "%-d/%m/%Y"}}</div>
+        </div>
+    </a>
+  </li>
+{% endfor %}
