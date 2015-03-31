@@ -3,14 +3,14 @@ layout: card
 description: Browse through our rich collection of samples for AEM Forms
 ---
 {% for post in site.posts %}
-<li>
+<li class="card-items col-sm-6 col-lg-4">
     <a class="card-container" href="{{site.baseurl}}/samples/{{post.title | downcase | replace: ' ', '-'}}.html">
-        <div class="img-container">
-            <img src="{{site.baseurl}}{{post.screenshot}}" />
+        <div class="card-img-container">
+            <img class="card-post-screenshot" src="{{site.baseurl}}{{post.screenshot}}" />
         </div>
-        <div class="card-details clearfix">
-            <div class="post-title pull-left">{{post.title}}</div>
-            <div class="post-date pull-right">{{post.date | date: "%-d/%m/%Y"}}</div>
+        <div class="card-post-details clearfix">
+            <div class="card-post-title">{{post.title}}</div>
+            <div class="card-post-date">{{post.date | date: "%-d/%m/%Y"}}</div>
         </div>
     </a>
   </li>

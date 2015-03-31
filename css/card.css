@@ -2,22 +2,17 @@ ul.cards {
     margin:0px;
     padding:0px;
     list-style: none;
-    list-style-type: none;
     width:100%;
 }
 
-ul.cards > li {
-    width:25%;
+.card-items {
     padding:10px;
     margin:0px;
-    float:left;
-    display:block;
-    min-height:200px;
-    height:200px;
+    height:360px;
     cursor:pointer;
 }
 
-ul.cards > li > .card-container {
+.card-container {
     background-color: #FFF;
     border:solid 2px;
     border-color:#CCC;
@@ -25,44 +20,51 @@ ul.cards > li > .card-container {
     box-shadow:5px 5px 4px 0px #CCC;
     transition:border-color 0.5s ease-in;
     display:block;
+    height: 100%;
 }
 
-ul.cards > li > .card-container:hover {
+.card-container:hover {
     border-color:#000;
 }
 
-ul.cards > li > .card-container > .img-container {
+.card-img-container {
     width:100%;
     background-color: #FFFFFF;
     position:relative;
-    height: 160px;
+    height: 85%;
 }
 
-ul.cards > li > .card-container > .img-container > img {
-    max-height:100%; 
-    width:100%;
+.card-post-screenshot {
+    height:100%;
+    max-width:100%;
     padding:1px;
     border:1px solid #CCCCCC;
-    margin:auto;
-    position:absolute;
-    top:0px;
-    bottom:0px;
-    left: 0px;
-    right: 0px;
 }
 
-ul.cards > li > .card-container > .card-details {
+.card-post-details {
     color:#333;
     /* text-align:center; */
     background: white;
     padding:3px;
+    position:relative;
+    height:15%;
 }
 
-ul.cards > li > .card-container > .card-details > .post-title {
+.card-post-title,
+.card-post-date {
+    position: absolute;
+    bottom: 0px;
+    width:100%;
+    padding: 4px;
+}
+
+.card-post-title {
     font-variant:small-caps;
     letter-spacing: 1px;
+    text-align: left;
 }
 
-ul.cards > li > .card-container > .card-details > .post-date {
+.card-post-date {
     color:#888;
+    text-align: right;
 }
